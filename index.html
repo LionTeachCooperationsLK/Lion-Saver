@@ -1,299 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#07090d">
-<meta name="description" content="LION TEACH COOPERATIONS LK — innovative apps, digital tools and creative technology.">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#07090d">
+<meta name="description" content="LION TEACH COOPERATIONS LK — innovative apps, digital tools and creative technology."><meta name="keywords" content="Lion Teach, Lion Saver, Sri Lanka apps, Android applications, digital tools"><meta name="author" content="LION TEACH COOPERATIONS LK">
+<meta property="og:type" content="website"><meta property="og:title" content="LION TEACH COOPERATIONS LK | Official Website"><meta property="og:description" content="Innovation, technology and applications. Discover our digital products."><meta name="twitter:card" content="summary">
 <title>LION TEACH COOPERATIONS LK | Official Website</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#07090d;--panel:#10141c;--gold:#ffbf19;--gold2:#ffe08a;--text:#f7f8fb;--muted:#a9afbb;--line:rgba(255,193,38,.24)}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
-a{color:inherit;text-decoration:none}
-button{font:inherit}
-#particles{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:radial-gradient(ellipse at 75% 25%,rgba(170,105,0,.12),transparent 40%),radial-gradient(ellipse at 15% 70%,rgba(17,45,83,.16),transparent 40%)}
-.particle{position:absolute;bottom:-15px;width:3px;height:3px;border-radius:50%;background:var(--gold);box-shadow:0 0 9px 2px rgba(255,191,25,.48);opacity:0;animation:rise linear infinite}
-@keyframes rise{0%{transform:translateY(0) translateX(0);opacity:0}10%{opacity:.85}90%{opacity:.55}100%{transform:translateY(-110vh) translateX(35px);opacity:0}}
-header{position:sticky;top:0;z-index:20;background:rgba(7,9,13,.86);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.1)}
-.nav{max-width:1240px;margin:auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:22px}
-.brand{display:flex;align-items:center;gap:12px;min-width:240px}
-.brand-mark{width:52px;height:52px;filter:drop-shadow(0 0 10px rgba(255,191,25,.35));flex-shrink:0}
-.brand-name{font-size:18px;line-height:1.05;font-weight:900;letter-spacing:1.1px}
-.brand-name span{color:var(--gold)}
-.brand-name small{display:block;font-size:10px;letter-spacing:2.5px;margin-top:5px;color:#e4e6eb}
-.nav-links{display:flex;align-items:center;gap:7px}
-.nav-links>a,.apps-toggle{padding:12px 14px;border:1px solid transparent;border-radius:999px;color:#e3e5ea;font-size:13px;background:transparent;cursor:pointer}
-.nav-links>a:hover,.apps-toggle:hover,.nav-links .active{border-color:var(--gold);color:var(--gold);box-shadow:0 0 16px rgba(255,191,25,.12)}
-.dropdown{position:relative}
-.dropdown-menu{position:absolute;top:calc(100% + 13px);left:0;min-width:230px;padding:10px;background:#111720;border:1px solid var(--line);border-radius:16px;box-shadow:0 18px 55px #000b;display:none}
-.dropdown.open .dropdown-menu{display:block;animation:dropIn .2s ease-out}
-.dropdown-menu a{display:flex;align-items:center;gap:12px;padding:12px;border-radius:10px;font-size:13px}
-.dropdown-menu a:hover{background:rgba(255,191,25,.1);color:var(--gold)}
-.menu-icon{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:#080b10;border:1px solid var(--line);color:var(--gold);font-weight:900}
-.cta{background:linear-gradient(135deg,#ffe38b,#ffb900)!important;color:#111!important;font-weight:900!important;border:0!important;box-shadow:0 0 22px rgba(255,191,25,.16)}
-@keyframes dropIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
-.mobile-menu{display:none;background:transparent;border:1px solid var(--line);color:var(--gold);border-radius:10px;padding:10px 12px}
-.hero{max-width:1240px;margin:auto;min-height:620px;padding:82px 24px 70px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:45px;position:relative}
-.kicker{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(255,191,25,.55);border-radius:999px;padding:9px 14px;color:var(--gold2);font-size:11px;font-weight:800;letter-spacing:1.3px;background:rgba(255,191,25,.05);margin-bottom:25px}
-.kicker:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
-h1{font-size:clamp(45px,6.6vw,82px);line-height:.96;letter-spacing:-4px;font-weight:900}
-h1 .gold{color:var(--gold);text-shadow:0 0 35px rgba(255,191,25,.16)}
-h1 .subline{display:block;font-size:clamp(28px,4.4vw,54px);letter-spacing:-2px;margin-top:10px}
-.hero-copy{font-size:15px;line-height:1.9;color:var(--muted);max-width:580px;margin:23px 0 30px}
-.hero-buttons{display:flex;flex-wrap:wrap;gap:13px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:15px 22px;font-size:13px;font-weight:850;border:1px solid var(--line);transition:transform .25s,box-shadow .25s,background .25s}
-.btn:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(255,191,25,.16)}
-.btn-primary{background:linear-gradient(135deg,#ffe38b,#ffb900);color:#111;border:0}
-.btn-ghost{background:rgba(255,255,255,.025)}
-.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
-.hero-note{font-size:10px;letter-spacing:1.5px;color:#7f8795;margin-top:24px}
-.hero-art{min-height:430px;display:grid;place-items:center;position:relative}
-.halo{width:min(390px,80vw);aspect-ratio:1;border-radius:50%;border:1px solid rgba(255,191,25,.3);display:grid;place-items:center;position:relative;animation:levitate 5s ease-in-out infinite;box-shadow:0 0 90px rgba(255,191,25,.07),inset 0 0 60px rgba(255,191,25,.04)}
-.halo:before,.halo:after{content:"";position:absolute;inset:-25px;border:1px solid rgba(255,191,25,.16);border-radius:50%;animation:spin 32s linear infinite}
-.halo:after{inset:-48px;border-style:dashed;animation-direction:reverse;animation-duration:48s}
-.lion-svg{width:78%;height:78%;filter:drop-shadow(0 0 22px rgba(255,191,25,.28));animation:lionGlow 4s ease-in-out infinite}
-@keyframes levitate{50%{transform:translateY(-12px)}}
-@keyframes spin{to{transform:rotate(360deg)}}
-@keyframes lionGlow{50%{filter:drop-shadow(0 0 36px rgba(255,191,25,.48))}}
-.art-label{position:absolute;bottom:26px;right:0;border:1px solid var(--line);background:#10151eee;border-radius:12px;padding:13px 16px;color:var(--gold2);font-size:11px;font-weight:800;letter-spacing:1px}
-.art-label.left{bottom:auto;right:auto;top:35px;left:0}
-.section{max-width:1240px;margin:auto;padding:48px 24px 90px}
-.section-heading{text-align:center;margin-bottom:34px}
-.eyebrow{font-size:10px;letter-spacing:3px;color:var(--gold);font-weight:900}
-.section-heading h2{font-size:clamp(28px,4vw,43px);letter-spacing:-1.5px;margin-top:12px}
-.section-heading p{color:var(--muted);font-size:14px;margin-top:10px}
-.app-card{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:24px;padding:27px;border:1px solid rgba(255,191,25,.55);border-radius:22px;background:linear-gradient(110deg,rgba(255,191,25,.08),rgba(13,17,25,.95) 44%,rgba(255,191,25,.035));box-shadow:0 15px 55px rgba(0,0,0,.2);position:relative;overflow:hidden}
-.app-card:after{content:"";position:absolute;top:0;left:-100%;width:45%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.045),transparent);transform:skewX(-18deg);animation:shine 8s ease-in-out infinite}
-@keyframes shine{0%,65%{left:-100%}85%,100%{left:150%}}
-.app-icon{width:116px;height:116px;border-radius:24px;background:#050608;border:2px solid var(--gold);box-shadow:0 0 22px rgba(255,191,25,.2);display:grid;place-items:center;overflow:hidden}
-.app-icon .lion-svg{width:88%;height:88%}
-.app-info,.app-actions{position:relative;z-index:1}
-.app-info h3{font-size:clamp(24px,3vw,36px);font-weight:900;letter-spacing:-1px}
-.app-info h3 span{color:var(--gold)}
-.app-subtitle{font-weight:700;color:#e2e4e9;margin-top:5px;font-size:13px}
-.app-info p{color:var(--muted);font-size:13px;line-height:1.8;max-width:600px;margin-top:12px}
-.app-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-.phone-art{width:140px;height:220px;border:2px solid #8b8f99;border-radius:25px;transform:rotate(9deg);padding:10px;background:linear-gradient(150deg,#222a36,#06080c);box-shadow:0 0 30px rgba(255,191,25,.12);display:flex;align-items:center;justify-content:center;position:relative}
-.phone-art:before{content:"";position:absolute;top:7px;width:42px;height:7px;border-radius:10px;background:#050608}
-.phone-art .lion-svg{width:95%;height:auto}
-.phone-caption{position:absolute;bottom:20px;color:var(--gold);font-size:10px;font-weight:900;letter-spacing:1px}
-.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}
-.benefit{padding:18px 12px;border:1px solid rgba(255,255,255,.08);border-radius:14px;background:rgba(255,255,255,.025);text-align:center;color:#e8eaf0;font-size:12px}
-.benefit strong{display:block;color:var(--gold);font-size:19px;margin-bottom:8px}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
-.about-panel{padding:30px;border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.025);border-radius:18px}
-.about-panel h3{font-size:21px;margin-bottom:13px}
-.about-panel p{color:var(--muted);font-size:13px;line-height:1.9}
-.about-panel .accent{color:var(--gold)}
-footer{border-top:1px solid rgba(255,255,255,.1);background:rgba(0,0,0,.25);padding:30px 24px}
-.footer-inner{max-width:1240px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.footer-copy{font-size:11px;color:#8e96a5;line-height:1.8}
-.footer-copy strong{color:#e7e9ee}
-.footer-tagline{font-size:10px;color:var(--gold2);letter-spacing:3px}
-.intro{position:fixed;inset:0;z-index:100;background:#050608;display:grid;place-items:center;transition:opacity .8s ease,visibility .8s ease}
-.intro.hide{opacity:0;visibility:hidden;pointer-events:none}
-.intro-content{text-align:center;padding:25px;animation:introRise 1.1s ease both}
-.intro .lion-svg{width:130px;height:130px;display:block;margin:0 auto 18px}
-.intro h2{font-size:clamp(23px,5vw,43px);letter-spacing:2px;font-weight:900}
-.intro h2 span{color:var(--gold)}
-.intro p{font-size:10px;letter-spacing:4px;color:#9ba2ad;margin-top:12px}
-.intro-line{width:180px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:22px auto 0;animation:linePulse 1.2s infinite}
-@keyframes introRise{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
-@keyframes linePulse{50%{opacity:.35;transform:scaleX(.65)}}
-@media(max-width:900px){.nav{padding:12px 18px}.brand{min-width:0}.nav-links{gap:0}.nav-links>a,.apps-toggle{padding:10px;font-size:12px}.nav-links .hide-tablet{display:none}.hero{grid-template-columns:1fr;text-align:center;padding-top:60px;gap:12px}.hero-copy{margin-left:auto;margin-right:auto}.hero-buttons{justify-content:center}.hero-art{min-height:390px}.app-card{grid-template-columns:auto 1fr}.phone-art{display:none}.benefits{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:620px){.nav{flex-wrap:wrap}.brand-mark{width:42px;height:42px}.brand-name{font-size:14px}.brand-name small{font-size:8px;letter-spacing:1.8px}.mobile-menu{display:block}.nav-links{display:none;width:100%;flex-direction:column;align-items:stretch;padding:8px 0 4px}.nav-links.show{display:flex}.nav-links>a,.apps-toggle{display:block;text-align:left;width:100%;padding:13px}.dropdown-menu{position:static;margin-top:7px;box-shadow:none}.hero{padding:50px 20px 40px}.hero h1{letter-spacing:-2.5px}.hero-art{min-height:300px}.halo{width:230px}.halo:before{inset:-14px}.halo:after{inset:-28px}.art-label{font-size:9px;padding:10px;right:0;bottom:8px}.art-label.left{top:12px;left:0}.section{padding:35px 18px 65px}.app-card{grid-template-columns:1fr;text-align:center;padding:22px 17px}.app-icon{margin:auto;width:100px;height:100px}.app-actions{justify-content:center}.app-info p{margin-left:auto;margin-right:auto}.benefits{gap:9px}.benefit{font-size:11px;padding:15px 8px}.about{grid-template-columns:1fr}.about-panel{padding:22px}.footer-inner{justify-content:center;text-align:center}.footer-tagline{width:100%;line-height:1.8}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+:root{--bg:#07090d;--panel:#10141c;--gold:#ffbf19;--gold2:#ffe08a;--text:#f7f8fb;--muted:#a9afbb;--line:rgba(255,193,38,.24);--green:#25d366}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:90px}body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}
+#particles{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:radial-gradient(ellipse at 75% 25%,rgba(170,105,0,.12),transparent 40%),radial-gradient(ellipse at 15% 70%,rgba(17,45,83,.16),transparent 40%)}.particle{position:absolute;bottom:-15px;width:3px;height:3px;border-radius:50%;background:var(--gold);box-shadow:0 0 9px 2px rgba(255,191,25,.48);opacity:0;animation:rise linear infinite}@keyframes rise{0%{transform:translateY(0) translateX(0);opacity:0}10%{opacity:.85}90%{opacity:.55}100%{transform:translateY(-110vh) translateX(35px);opacity:0}}
+header{position:sticky;top:0;z-index:20;background:rgba(7,9,13,.86);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.1)}.nav{max-width:1240px;margin:auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px;min-width:240px}.brand-mark{width:52px;height:52px;filter:drop-shadow(0 0 10px rgba(255,191,25,.35));flex-shrink:0}.brand-name{font-size:18px;line-height:1.05;font-weight:900;letter-spacing:1.1px}.brand-name span{color:var(--gold)}.brand-name small{display:block;font-size:10px;letter-spacing:2.5px;margin-top:5px;color:#e4e6eb}
+.nav-links{display:flex;align-items:center;gap:7px}.nav-links>a,.apps-toggle{padding:12px 14px;border:1px solid transparent;border-radius:999px;color:#e3e5ea;font-size:13px;background:transparent;cursor:pointer}.nav-links>a:hover,.apps-toggle:hover,.nav-links .active{border-color:var(--gold);color:var(--gold);box-shadow:0 0 16px rgba(255,191,25,.12)}.dropdown{position:relative}.dropdown-menu{position:absolute;top:calc(100% + 13px);left:0;min-width:230px;padding:10px;background:#111720;border:1px solid var(--line);border-radius:16px;box-shadow:0 18px 55px #000b;display:none}.dropdown.open .dropdown-menu{display:block;animation:dropIn .2s ease-out}.dropdown-menu a{display:flex;align-items:center;gap:12px;padding:12px;border-radius:10px;font-size:13px}.dropdown-menu a:hover{background:rgba(255,191,25,.1);color:var(--gold)}.menu-icon{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:#080b10;border:1px solid var(--line);color:var(--gold);font-weight:900}.cta{background:linear-gradient(135deg,#ffe38b,#ffb900)!important;color:#111!important;font-weight:900!important;border:0!important;box-shadow:0 0 22px rgba(255,191,25,.16)}@keyframes dropIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}.mobile-menu{display:none;background:transparent;border:1px solid var(--line);color:var(--gold);border-radius:10px;padding:10px 12px}
+.hero{max-width:1240px;margin:auto;min-height:620px;padding:82px 24px 70px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:45px;position:relative}.kicker{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(255,191,25,.55);border-radius:999px;padding:9px 14px;color:var(--gold2);font-size:11px;font-weight:800;letter-spacing:1.3px;background:rgba(255,191,25,.05);margin-bottom:25px}.kicker:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}h1{font-size:clamp(45px,6.6vw,82px);line-height:.96;letter-spacing:-4px;font-weight:900}h1 .gold{color:var(--gold);text-shadow:0 0 35px rgba(255,191,25,.16)}h1 .subline{display:block;font-size:clamp(28px,4.4vw,54px);letter-spacing:-2px;margin-top:10px}.hero-copy{font-size:15px;line-height:1.9;color:var(--muted);max-width:580px;margin:23px 0 30px}.hero-buttons{display:flex;flex-wrap:wrap;gap:13px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:15px 22px;font-size:13px;font-weight:850;border:1px solid var(--line);transition:transform .25s,box-shadow .25s,background .25s;cursor:pointer}.btn:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(255,191,25,.16)}.btn-primary{background:linear-gradient(135deg,#ffe38b,#ffb900);color:#111;border:0}.btn-ghost{background:rgba(255,255,255,.025)}.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}.hero-note{font-size:10px;letter-spacing:1.5px;color:#7f8795;margin-top:24px}
+.hero-art{min-height:430px;display:grid;place-items:center;position:relative}.halo{width:min(390px,80vw);aspect-ratio:1;border-radius:50%;border:1px solid rgba(255,191,25,.3);display:grid;place-items:center;position:relative;animation:levitate 5s ease-in-out infinite;box-shadow:0 0 90px rgba(255,191,25,.07),inset 0 0 60px rgba(255,191,25,.04)}.halo:before,.halo:after{content:"";position:absolute;inset:-25px;border:1px solid rgba(255,191,25,.16);border-radius:50%;animation:spin 32s linear infinite}.halo:after{inset:-48px;border-style:dashed;animation-direction:reverse;animation-duration:48s}.lion-svg{width:78%;height:78%;filter:drop-shadow(0 0 22px rgba(255,191,25,.28));animation:lionGlow 4s ease-in-out infinite}@keyframes levitate{50%{transform:translateY(-12px)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes lionGlow{50%{filter:drop-shadow(0 0 36px rgba(255,191,25,.48))}}.art-label{position:absolute;bottom:26px;right:0;border:1px solid var(--line);background:#10151eee;border-radius:12px;padding:13px 16px;color:var(--gold2);font-size:11px;font-weight:800;letter-spacing:1px}.art-label.left{bottom:auto;right:auto;top:35px;left:0}
+.section{max-width:1240px;margin:auto;padding:48px 24px 90px}.section-heading{text-align:center;margin-bottom:34px}.eyebrow{font-size:10px;letter-spacing:3px;color:var(--gold);font-weight:900}.section-heading h2{font-size:clamp(28px,4vw,43px);letter-spacing:-1.5px;margin-top:12px}.section-heading p{color:var(--muted);font-size:14px;margin-top:10px}.app-card{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:24px;padding:27px;border:1px solid rgba(255,191,25,.55);border-radius:22px;background:linear-gradient(110deg,rgba(255,191,25,.08),rgba(13,17,25,.95) 44%,rgba(255,191,25,.035));box-shadow:0 15px 55px rgba(0,0,0,.2);position:relative;overflow:hidden}.app-card:after{content:"";position:absolute;top:0;left:-100%;width:45%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.045),transparent);transform:skewX(-18deg);animation:shine 8s ease-in-out infinite}@keyframes shine{0%,65%{left:-100%}85%,100%{left:150%}}.app-icon{width:116px;height:116px;border-radius:24px;background:#050608;border:2px solid var(--gold);box-shadow:0 0 22px rgba(255,191,25,.2);display:grid;place-items:center;overflow:hidden}.app-icon .lion-svg{width:88%;height:88%}.app-info,.app-actions{position:relative;z-index:1}.app-info h3{font-size:clamp(24px,3vw,36px);font-weight:900;letter-spacing:-1px}.app-info h3 span{color:var(--gold)}.app-subtitle{font-weight:700;color:#e2e4e9;margin-top:5px;font-size:13px}.app-info p{color:var(--muted);font-size:13px;line-height:1.8;max-width:600px;margin-top:12px}.app-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.phone-art{width:140px;height:220px;border:2px solid #8b8f99;border-radius:25px;transform:rotate(9deg);padding:10px;background:linear-gradient(150deg,#222a36,#06080c);box-shadow:0 0 30px rgba(255,191,25,.12);display:flex;align-items:center;justify-content:center;position:relative}.phone-art:before{content:"";position:absolute;top:7px;width:42px;height:7px;border-radius:10px;background:#050608}.phone-art .lion-svg{width:95%;height:auto}.phone-caption{position:absolute;bottom:20px;color:var(--gold);font-size:10px;font-weight:900;letter-spacing:1px}.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}.benefit{padding:18px 12px;border:1px solid rgba(255,255,255,.08);border-radius:14px;background:rgba(255,255,255,.025);text-align:center;color:#e8eaf0;font-size:12px}.benefit strong{display:block;color:var(--gold);font-size:19px;margin-bottom:8px}.about{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}.about-panel{padding:30px;border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.025);border-radius:18px}.about-panel h3{font-size:21px;margin-bottom:13px}.about-panel p{color:var(--muted);font-size:13px;line-height:1.9}.about-panel .accent{color:var(--gold)}
+footer{border-top:1px solid rgba(255,255,255,.1);background:rgba(0,0,0,.25);padding:30px 24px}.footer-inner{max-width:1240px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-copy{font-size:11px;color:#8e96a5;line-height:1.8}.footer-copy strong{color:#e7e9ee}.footer-tagline{font-size:10px;color:var(--gold2);letter-spacing:3px}.intro{position:fixed;inset:0;z-index:100;background:#050608;display:grid;place-items:center;transition:opacity .8s ease,visibility .8s ease}.intro.hide{opacity:0;visibility:hidden;pointer-events:none}.intro-content{text-align:center;padding:25px;animation:introRise 1.1s ease both}.intro .lion-svg{width:130px;height:130px;display:block;margin:0 auto 18px}.intro h2{font-size:clamp(23px,5vw,43px);letter-spacing:2px;font-weight:900}.intro h2 span{color:var(--gold)}.intro p{font-size:10px;letter-spacing:4px;color:#9ba2ad;margin-top:12px}.intro-line{width:180px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:22px auto 0;animation:linePulse 1.2s infinite}@keyframes introRise{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}@keyframes linePulse{50%{opacity:.35;transform:scaleX(.65)}}
+/* Added features */
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature-card{padding:25px;border:1px solid rgba(255,255,255,.09);border-radius:18px;background:linear-gradient(145deg,rgba(255,191,25,.055),rgba(255,255,255,.018));transition:.3s}.feature-card:hover,.gallery-card:hover{transform:translateY(-6px);border-color:rgba(255,191,25,.55);box-shadow:0 15px 35px #0005}.feature-icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:rgba(255,191,25,.1);color:var(--gold);font-size:23px;margin-bottom:17px}.feature-card h3{font-size:16px;margin-bottom:9px}.feature-card p{font-size:12px;line-height:1.8;color:var(--muted)}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.gallery-card{border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:15px;background:rgba(255,255,255,.025);transition:.3s;text-align:center}.gallery-screen{height:260px;border:5px solid #343b49;border-radius:25px;background:radial-gradient(circle at top,rgba(255,191,25,.17),transparent 55%),#080b11;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:13px;overflow:hidden;position:relative}.gallery-screen:before{content:"";position:absolute;top:8px;width:55px;height:7px;border-radius:9px;background:#343b49}.gallery-screen .lion-svg{width:100px;height:100px}.gallery-screen strong{font-size:18px;letter-spacing:1px}.gallery-screen strong span{color:var(--gold)}.gallery-screen small{color:var(--muted);font-size:10px;letter-spacing:1px}.gallery-card h3{font-size:14px;margin-top:14px}.gallery-card p{font-size:11px;color:var(--muted);margin-top:6px;line-height:1.6}
+.faq-list{max-width:850px;margin:auto;display:grid;gap:12px}.faq-item{border:1px solid rgba(255,255,255,.1);border-radius:14px;background:rgba(255,255,255,.025);overflow:hidden}.faq-question{width:100%;padding:19px 20px;background:transparent;color:var(--text);border:0;display:flex;justify-content:space-between;align-items:center;text-align:left;font-weight:750;font-size:13px;cursor:pointer;gap:15px}.faq-question span:last-child{color:var(--gold);font-size:20px;transition:transform .25s}.faq-answer{max-height:0;overflow:hidden;transition:max-height .3s ease}.faq-answer p{padding:0 20px 19px;color:var(--muted);font-size:12px;line-height:1.8}.faq-item.open .faq-answer{max-height:180px}.faq-item.open .faq-question span:last-child{transform:rotate(45deg)}
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-panel{padding:28px;border:1px solid rgba(255,255,255,.1);border-radius:18px;background:rgba(255,255,255,.025)}.contact-panel h3{font-size:21px;margin-bottom:12px}.contact-panel p{color:var(--muted);font-size:13px;line-height:1.8}.contact-links{display:grid;gap:12px;margin-top:20px}.contact-link{display:flex;align-items:center;gap:13px;padding:14px;border-radius:12px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.07);font-size:12px;transition:.25s}.contact-link:hover{border-color:var(--gold);color:var(--gold)}.contact-symbol{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:rgba(255,191,25,.1);color:var(--gold);font-size:17px}.contact-symbol.whatsapp{background:#25d36618;color:#25d366}.contact-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.whatsapp-float,.back-top{position:fixed;right:22px;z-index:45;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;border:0;cursor:pointer;transition:.3s}.whatsapp-float{bottom:22px;background:var(--green);color:#fff;font-size:27px;box-shadow:0 5px 25px #25d36666}.whatsapp-float:hover{transform:scale(1.1);box-shadow:0 8px 35px #25d36699}.back-top{bottom:91px;background:#171d28;color:var(--gold);border:1px solid var(--line);font-size:22px;opacity:0;visibility:hidden;transform:translateY(10px)}.back-top.show{opacity:1;visibility:visible;transform:none}.back-top:hover{background:var(--gold);color:#111}.reveal{opacity:0;transform:translateY(25px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:900px){.nav{padding:12px 18px}.brand{min-width:0}.nav-links{gap:0}.nav-links>a,.apps-toggle{padding:10px;font-size:12px}.nav-links .hide-tablet{display:none}.hero{grid-template-columns:1fr;text-align:center;padding-top:60px;gap:12px}.hero-copy{margin-left:auto;margin-right:auto}.hero-buttons{justify-content:center}.hero-art{min-height:390px}.app-card{grid-template-columns:auto 1fr}.phone-art{display:none}.benefits{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.nav{flex-wrap:wrap}.brand-mark{width:42px;height:42px}.brand-name{font-size:14px}.brand-name small{font-size:8px;letter-spacing:1.8px}.mobile-menu{display:block}.nav-links{display:none;width:100%;flex-direction:column;align-items:stretch;padding:8px 0 4px}.nav-links.show{display:flex}.nav-links>a,.apps-toggle{display:block;text-align:left;width:100%;padding:13px}.dropdown-menu{position:static;margin-top:7px;box-shadow:none}.hero{padding:50px 20px 40px}.hero h1{letter-spacing:-2.5px}.hero-art{min-height:300px}.halo{width:230px}.halo:before{inset:-14px}.halo:after{inset:-28px}.art-label{font-size:9px;padding:10px;right:0;bottom:8px}.art-label.left{top:12px;left:0}.section{padding:35px 18px 65px}.app-card{grid-template-columns:1fr;text-align:center;padding:22px 17px}.app-icon{margin:auto;width:100px;height:100px}.app-actions{justify-content:center}.app-info p{margin-left:auto;margin-right:auto}.benefits{gap:9px}.benefit{font-size:11px;padding:15px 8px}.about{grid-template-columns:1fr}.about-panel{padding:22px}.footer-inner{justify-content:center;text-align:center}.footer-tagline{width:100%;line-height:1.8}.feature-grid,.gallery-grid,.contact-wrap{grid-template-columns:1fr}.feature-card{padding:22px}.gallery-screen{height:240px}.whatsapp-float,.back-top{right:15px;width:51px;height:51px}.back-top{bottom:81px}.whatsapp-float{bottom:17px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
 <div id="particles" aria-hidden="true"></div>
-
-<!-- Custom vector lion emblem: no emoji and no external logo file required. -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-<symbol id="lion-emblem" viewBox="0 0 200 200">
-  <defs>
-    <linearGradient id="maneGold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe9a2"/><stop offset=".48" stop-color="#ffbd19"/><stop offset="1" stop-color="#a96600"/></linearGradient>
-    <linearGradient id="faceWhite" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#aab1bd"/></linearGradient>
-  </defs>
-  <path d="M100 8 116 24 139 17 148 39 170 45 167 69 188 85 174 105 181 127 157 141 149 164 125 164 100 190 78 166 53 168 44 145 21 134 28 110 11 91 30 72 28 49 52 40 62 18 84 26Z" fill="url(#maneGold)" stroke="#fff0b4" stroke-width="2"/>
-  <path d="M100 25 116 42 137 36 143 57 160 69 151 89 158 110 140 126 133 150 111 151 100 170 87 151 66 151 59 130 41 116 48 95 39 77 57 63 62 43 83 47Z" fill="#080a0e" stroke="#f7f7f7" stroke-width="2.5"/>
-  <path d="M69 61 52 53 57 82 72 92 64 110 78 135 94 151 100 159 108 148 125 135 137 110 129 92 144 80 148 53 131 61 118 48 100 58 83 48Z" fill="url(#faceWhite)" stroke="#090b10" stroke-width="3"/>
-  <path d="M70 72 88 80 98 72 100 87 85 94 67 88Z" fill="#090b10"/>
-  <path d="M130 72 112 80 102 72 100 87 115 94 133 88Z" fill="#090b10"/>
-  <path d="M72 76 86 80 76 84Z M128 76 114 80 124 84Z" fill="#ffbf19"/>
-  <path d="M92 99 100 93 108 99 104 109 96 109Z" fill="#090b10"/>
-  <path d="M100 108 100 121 88 127 77 120 82 134 99 141 117 133 123 120 111 127Z" fill="#090b10"/>
-  <path d="M90 127 100 130 110 127 106 137 100 140 94 137Z" fill="#f4f4f4"/>
-  <path d="M76 99 62 105 75 108 M124 99 138 105 125 108" fill="none" stroke="#090b10" stroke-width="4" stroke-linecap="round"/>
-  <path d="M77 49 88 31 100 43 112 31 123 49 112 57 100 52 88 57Z" fill="url(#maneGold)" stroke="#fff0b4" stroke-width="2"/>
-  <path d="M100 28 100 12 106 23 117 22 109 32Z" fill="#ffcf42"/>
-  <path d="M57 117 39 125 57 132 M143 117 161 125 143 132 M69 140 53 151 77 151 M131 140 147 151 123 151" fill="none" stroke="#ffcf42" stroke-width="3" stroke-linecap="round"/>
-</symbol>
-</svg>
-
-<div class="intro" id="intro" aria-label="Welcome">
-  <div class="intro-content">
-    <svg class="lion-svg" viewBox="0 0 200 200"><use href="#lion-emblem"/></svg>
-    <h2>LION <span>TEACH</span></h2>
-    <h2 style="font-size:clamp(15px,3vw,23px);letter-spacing:4px;margin-top:5px">COOPERATIONS LK</h2>
-    <p>INNOVATION · TECHNOLOGY · APPLICATIONS</p>
-    <div class="intro-line"></div>
-  </div>
-</div>
-
-<header>
-  <nav class="nav" aria-label="Main navigation">
-    <a class="brand" href="#home" aria-label="Lion Teach home">
-      <svg class="brand-mark" viewBox="0 0 200 200"><use href="#lion-emblem"/></svg>
-      <span class="brand-name">LION <span>TEACH</span><small>COOPERATIONS LK</small></span>
-    </a>
-    <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation" aria-expanded="false">MENU ☰</button>
-    <div class="nav-links" id="navLinks">
-      <a class="active" href="#home">Home</a>
-      <div class="dropdown" id="appsDropdown">
-        <button class="apps-toggle" id="appsToggle" aria-expanded="false">Apps⌄</button>
-        <div class="dropdown-menu">
-          <a href="#lion-saver"><span class="menu-icon">LS</span><span><strong>LION SAVER</strong><br><small>Android application</small></span></a>
-          <a href="#future-apps"><span class="menu-icon">+</span><span><strong>More apps</strong><br><small>New projects coming soon</small></span></a>
-        </div>
-      </div>
-      <a class="hide-tablet" href="#about">About</a>
-      <a class="hide-tablet" href="#services">Services</a>
-      <a href="mailto:lionteachcooperationslk@gmail.com">Contact</a>
-      <a class="cta" href="#lion-saver">Explore Apps ↗</a>
-    </div>
-  </nav>
-</header>
-
+<!-- Original custom vector lion emblem -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="lion-emblem" viewBox="0 0 200 200">
+<defs><linearGradient id="maneGold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe9a2"/><stop offset=".48" stop-color="#ffbd19"/><stop offset="1" stop-color="#a96600"/></linearGradient><linearGradient id="faceWhite" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#aab1bd"/></linearGradient></defs>
+<path d="M100 8 116 24 139 17 148 39 170 45 167 69 188 85 174 105 181 127 157 141 149 164 125 164 100 190 78 166 53 168 44 145 21 134 28 110 11 91 30 72 28 49 52 40 62 18 84 26Z" fill="url(#maneGold)" stroke="#fff0b4" stroke-width="2"/>
+<path d="M100 25 116 42 137 36 143 57 160 69 151 89 158 110 140 126 133 150 111 151 100 170 87 151 66 151 59 130 41 116 48 95 39 77 57 63 62 43 83 47Z" fill="#080a0e" stroke="#f7f7f7" stroke-width="2.5"/>
+<path d="M69 61 52 53 57 82 72 92 64 110 78 135 94 151 100 159 108 148 125 135 137 110 129 92 144 80 148 53 131 61 118 48 100 58 83 48Z" fill="url(#faceWhite)" stroke="#090b10" stroke-width="3"/>
+<path d="M70 72 88 80 98 72 100 87 85 94 67 88Z M130 72 112 80 102 72 100 87 115 94 133 88Z" fill="#090b10"/><path d="M72 76 86 80 76 84Z M128 76 114 80 124 84Z" fill="#ffbf19"/><path d="M92 99 100 93 108 99 104 109 96 109Z" fill="#090b10"/><path d="M100 108 100 121 88 127 77 120 82 134 99 141 117 133 123 120 111 127Z" fill="#090b10"/><path d="M90 127 100 130 110 127 106 137 100 140 94 137Z" fill="#f4f4f4"/><path d="M76 99 62 105 75 108 M124 99 138 105 125 108" fill="none" stroke="#090b10" stroke-width="4" stroke-linecap="round"/><path d="M77 49 88 31 100 43 112 31 123 49 112 57 100 52 88 57Z" fill="url(#maneGold)" stroke="#fff0b4" stroke-width="2"/><path d="M100 28 100 12 106 23 117 22 109 32Z" fill="#ffcf42"/><path d="M57 117 39 125 57 132 M143 117 161 125 143 132 M69 140 53 151 77 151 M131 140 147 151 123 151" fill="none" stroke="#ffcf42" stroke-width="3" stroke-linecap="round"/>
+</symbol></svg>
+<div class="intro" id="intro" aria-label="Welcome"><div class="intro-content"><svg class="lion-svg" viewBox="0 0 200 200"><use href="#lion-emblem"/></svg><h2>LION <span>TEACH</span></h2><h2 style="font-size:clamp(15px,3vw,23px);letter-spacing:4px;margin-top:5px">COOPERATIONS LK</h2><p>INNOVATION · TECHNOLOGY · APPLICATIONS</p><div class="intro-line"></div></div></div>
+<header><nav class="nav" aria-label="Main navigation"><a class="brand" href="#home" aria-label="Lion Teach home"><svg class="brand-mark" viewBox="0 0 200 200"><use href="#lion-emblem"/></svg><span class="brand-name">LION <span>TEACH</span><small>COOPERATIONS LK</small></span></a><button class="mobile-menu" id="mobileMenu" aria-label="Open navigation" aria-expanded="false">MENU ☰</button>
+<div class="nav-links" id="navLinks"><a class="active" href="#home">Home</a><div class="dropdown" id="appsDropdown"><button class="apps-toggle" id="appsToggle" aria-expanded="false">Apps⌄</button><div class="dropdown-menu"><a href="#lion-saver"><span class="menu-icon">LS</span><span><strong>LION SAVER</strong><br><small>Android application</small></span></a><a href="#future-apps"><span class="menu-icon">+</span><span><strong>More apps</strong><br><small>New projects coming soon</small></span></a></div></div><a class="hide-tablet" href="#about">About</a><a class="hide-tablet" href="#services">Services</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a class="cta" href="#lion-saver">Explore Apps ↗</a></div></nav></header>
 <main id="home">
-  <section class="hero">
-    <div>
-      <div class="kicker">INNOVATION · TECHNOLOGY · APPLICATIONS</div>
-      <h1>LION <span class="gold">TEACH</span><span class="subline">COOPERATIONS LK</span></h1>
-      <h2 style="font-size:clamp(18px,2.4vw,25px);font-style:italic;margin-top:19px">Building a Smarter Digital Future.</h2>
-      <p class="hero-copy">Discover our innovative apps, powerful tools and creative technology. We build practical digital experiences designed to make everyday tasks simpler.</p>
-      <div class="hero-buttons">
-        <a class="btn btn-primary" href="#lion-saver">▦ &nbsp; Explore Our Apps →</a>
-        <a class="btn btn-ghost" href="#about">Discover Our Company ↗</a>
-      </div>
-      <p class="hero-note">INDEPENDENT DIGITAL PRODUCTS · BUILT WITH PURPOSE</p>
-    </div>
-    <div class="hero-art" aria-label="Animated lion emblem">
-      <div class="halo"><svg class="lion-svg" viewBox="0 0 200 200"><use href="#lion-emblem"/></svg></div>
-      <div class="art-label left">CREATIVE TECHNOLOGY</div>
-      <div class="art-label">DREAM BIG · CREATE MORE</div>
-    </div>
-  </section>
-
-  <section class="section" id="services">
-    <div class="section-heading">
-      <div class="eyebrow">OUR DIGITAL WORLD</div>
-      <h2>Our <span style="color:var(--gold)">Applications</span></h2>
-      <p>Useful apps. Thoughtful tools. One growing digital family.</p>
-    </div>
-    <article class="app-card" id="lion-saver">
-      <div class="app-icon"><svg class="lion-svg" viewBox="0 0 200 200"><use href="#lion-emblem"/></svg></div>
-      <div class="app-info">
-        <h3>LION <span>SAVER</span></h3>
-        <div class="app-subtitle">Save Statuses · Download Videos · Manage Media</div>
-        <p>A handy Android application for viewing and saving supported WhatsApp statuses, managing media, and using supported video-download tools.</p>
-        <div class="app-actions">
-          <a class="btn btn-primary" href="https://github.com/LionTeachCooperationsLK/Lion-Saver/releases/latest" target="_blank" rel="noopener">↓ &nbsp; Download APK</a>
-          <a class="btn btn-ghost" href="https://github.com/LionTeachCooperationsLK/Lion-Saver" target="_blank" rel="noopener">View Project ↗</a>
-        </div>
-      </div>
-      <div class="phone-art" aria-hidden="true">
-        <svg class="lion-svg" viewBox="0 0 200 200"><use href="#lion-emblem"/></svg>
-        <div class="phone-caption">LION SAVER</div>
-      </div>
-    </article>
-    <div class="benefits" id="future-apps">
-      <div class="benefit"><strong>◇</strong>Practical Digital Tools</div>
-      <div class="benefit"><strong>↗</strong>Continuous Improvement</div>
-      <div class="benefit"><strong>◎</strong>User-Focused Design</div>
-      <div class="benefit"><strong>＋</strong>More Apps Coming</div>
-    </div>
-  </section>
-
-  <section class="section" id="about">
-    <div class="section-heading">
-      <div class="eyebrow">WHO WE ARE</div>
-      <h2>Technology with <span style="color:var(--gold)">Purpose.</span></h2>
-      <p>Our goal is to turn useful ideas into accessible digital experiences.</p>
-    </div>
-    <div class="about">
-      <div class="about-panel">
-        <h3>About <span class="accent">LION TEACH</span></h3>
-        <p>LION TEACH COOPERATIONS LK is a growing digital brand focused on creating applications and technology projects. This website is the central place to discover our apps and follow new releases.</p>
-      </div>
-      <div class="about-panel">
-        <h3>Our <span class="accent">Vision</span></h3>
-        <p>We believe good technology should be useful, clear and easy to access. We aim to keep improving our products and introduce more applications over time.</p>
-      </div>
-    </div>
-  </section>
+<section class="hero"><div><div class="kicker">INNOVATION · TECHNOLOGY · APPLICATIONS</div><h1>LION <span class="gold">TEACH</span><span class="subline">COOPERATIONS LK</span></h1><h2 style="font-size:clamp(18px,2.4vw,25px);font-style:italic;margin-top:19px">Building a Smarter Digital Future.</h2><p class="hero-copy">Discover our innovative apps, powerful tools and creative technology. We build practical digital experiences designed to make everyday tasks simpler.</p><div class="hero-buttons"><a class="btn btn-primary" href="#lion-saver">▦ &nbsp; Explore Our Apps →</a><a class="btn btn-ghost" href="#about">Discover Our Company ↗</a></div><p class="hero-note">INDEPENDENT DIGITAL PRODUCTS · BUILT WITH PURPOSE</p></div><div class="hero-art" aria-label="Animated lion emblem"><div class="halo"><svg class="lion-svg" viewBox="0 0 200 200"><use href="#lion-emblem"/></svg></div><div class="art-label left">CREATIVE TECHNOLOGY</div><div class="art-label">DREAM BIG · CREATE MORE</div></div></section>
+<section class="section" id="services"><div class="section-heading"><div class="eyebrow">OUR DIGITAL WORLD</div><h2>Our <span style="color:var(--gold)">Applications</span></h2><p>Useful apps. Thoughtful tools. One growing digital family.</p></div><article class="app-card" id="lion-saver"><div class="app-icon"><svg class="lion-svg" viewBox="0 0 200 200"><use href="#lion-emblem"/></svg></div><div class="app-info"><h3>LION <span>SAVER</span></h3><div class="app-subtitle">Save Statuses · Download Videos · Manage Media</div><p>A handy Android application for viewing and saving supported WhatsApp statuses, managing media, and using supported video-download tools.</p><div class="app-actions"><a class="btn btn-primary" href="https://github.com/LionTeachCooperationsLK/Lion-Saver/releases/latest" target="_blank" rel="noopener">↓ &nbsp; Download APK</a><a class="btn btn-ghost" href="https://github.com/LionTeachCooperationsLK/Lion-Saver" target="_blank" rel="noopener">View Project ↗</a></div></div><div class="phone-art" aria-hidden="true"><svg class="lion-svg" viewBox="0 0 200 200"><use href="#lion-emblem"/></svg><div class="phone-caption">LION SAVER</div></div></article><div class="benefits" id="future-apps"><div class="benefit"><strong>◇</strong>Practical Digital Tools</div><div class="benefit"><strong>↗</strong>Continuous Improvement</div><div class="benefit"><strong>◎</strong>User-Focused Design</div><div class="benefit"><strong>＋</strong>More Apps Coming</div></div></section>
+<section class="section reveal" id="why-us"><div class="section-heading"><div class="eyebrow">THE LION TEACH DIFFERENCE</div><h2>Why Choose <span style="color:var(--gold)">Us?</span></h2><p>We focus on useful ideas and straightforward digital experiences.</p></div><div class="feature-grid"><article class="feature-card"><div class="feature-icon">✦</div><h3>Simple Experiences</h3><p>We aim to make our applications clear, practical and easy to understand.</p></article><article class="feature-card"><div class="feature-icon">⚡</div><h3>Useful Technology</h3><p>Our projects are built around everyday needs and helpful digital tools.</p></article><article class="feature-card"><div class="feature-icon">↗</div><h3>Always Improving</h3><p>We continue working to improve existing products and explore new ideas.</p></article></div></section>
+<section class="section reveal" id="gallery"><div class="section-heading"><div class="eyebrow">TAKE A CLOSER LOOK</div><h2>App <span style="color:var(--gold)">Showcase</span></h2><p>A preview of the Lion Saver brand and app experience.</p></div><div class="gallery-grid"><article class="gallery-card"><div class="gallery-screen"><svg class="lion-svg" viewBox="0 0 200 200"><use href="#lion-emblem"/></svg><strong>LION <span>SAVER</span></strong><small>WELCOME TO LION SAVER</small></div><h3>Brand Identity</h3><p>The Lion Saver visual identity.</p></article><article class="gallery-card"><div class="gallery-screen"><div class="feature-icon" style="width:64px;height:64px;font-size:30px">▣</div><strong>STATUS <span>SAVER</span></strong><small>MANAGE YOUR MEDIA</small></div><h3>Status & Media</h3><p>A visual concept for supported media tools.</p></article><article class="gallery-card"><div class="gallery-screen"><div class="feature-icon" style="width:64px;height:64px;font-size:30px">↓</div><strong>VIDEO <span>TOOLS</span></strong><small>QUICK AND SIMPLE</small></div><h3>Video Tools</h3><p>A visual concept for supported video features.</p></article></div></section>
+<section class="section" id="about"><div class="section-heading"><div class="eyebrow">WHO WE ARE</div><h2>Technology with <span style="color:var(--gold)">Purpose.</span></h2><p>Our goal is to turn useful ideas into accessible digital experiences.</p></div><div class="about"><div class="about-panel"><h3>About <span class="accent">LION TEACH</span></h3><p>LION TEACH COOPERATIONS LK is a growing digital brand focused on creating applications and technology projects. This website is the central place to discover our apps and follow new releases.</p></div><div class="about-panel"><h3>Our <span class="accent">Vision</span></h3><p>We believe good technology should be useful, clear and easy to access. We aim to keep improving our products and introduce more applications over time.</p></div></div></section>
+<section class="section reveal" id="faq"><div class="section-heading"><div class="eyebrow">NEED TO KNOW?</div><h2>Frequently Asked <span style="color:var(--gold)">Questions</span></h2><p>Quick answers about our company and applications.</p></div><div class="faq-list"><article class="faq-item"><button class="faq-question" aria-expanded="false"><span>What is LION TEACH COOPERATIONS LK?</span><span>＋</span></button><div class="faq-answer"><p>It is a digital brand focused on creating applications, useful tools and technology projects.</p></div></article><article class="faq-item"><button class="faq-question" aria-expanded="false"><span>Where can I download LION SAVER?</span><span>＋</span></button><div class="faq-answer"><p>Use the Download APK button in the LION SAVER section. It opens the latest GitHub release, if an APK release is available.</p></div></article><article class="faq-item"><button class="faq-question" aria-expanded="false"><span>Is LION SAVER available for iPhone?</span><span>＋</span></button><div class="faq-answer"><p>LION SAVER is presented here as an Android application. Check the project page for current platform availability.</p></div></article><article class="faq-item"><button class="faq-question" aria-expanded="false"><span>How can I contact the team?</span><span>＋</span></button><div class="faq-answer"><p>You can contact us through WhatsApp or email using the details in the Contact section below.</p></div></article></div></section>
+<section class="section reveal" id="contact"><div class="section-heading"><div class="eyebrow">LET'S CONNECT</div><h2>Get in <span style="color:var(--gold)">Touch.</span></h2><p>Have a question or an idea? Contact LION TEACH COOPERATIONS LK.</p></div><div class="contact-wrap"><div class="contact-panel"><h3>Contact <span style="color:var(--gold)">Our Team</span></h3><p>We welcome questions, feedback and conversations about our digital projects.</p><div class="contact-links"><a class="contact-link" href="https://wa.me/94768253560?text=Hello%20LION%20TEACH%20COOPERATIONS%20LK" target="_blank" rel="noopener"><span class="contact-symbol whatsapp">☏</span><span><strong>WhatsApp</strong><br>+94 76 825 3560</span></a><a class="contact-link" href="mailto:lionteachcooperationslk@gmail.com"><span class="contact-symbol">✉</span><span><strong>Email</strong><br>lionteachcooperationslk@gmail.com</span></a><a class="contact-link" href="https://github.com/LionTeachCooperationsLK/Lion-Saver" target="_blank" rel="noopener"><span class="contact-symbol">⌘</span><span><strong>GitHub</strong><br>Explore our project repository</span></a></div></div><div class="contact-panel"><h3>Let's Build Something <span style="color:var(--gold)">Useful.</span></h3><p>Follow our projects and get in touch if you want to learn more about LION SAVER or upcoming applications.</p><div class="contact-cta"><a class="btn btn-primary" href="https://wa.me/94768253560?text=Hello%20LION%20TEACH%20COOPERATIONS%20LK" target="_blank" rel="noopener">Chat on WhatsApp ↗</a><a class="btn btn-ghost" href="mailto:lionteachcooperationslk@gmail.com">Send an Email ↗</a></div></div></div></section>
 </main>
-
-<footer>
-  <div class="footer-inner">
-    <div class="footer-copy"><strong>LION TEACH COOPERATIONS LK</strong><br>© <span id="year"></span> All rights reserved.</div>
-    <div class="footer-tagline">INNOVATION TODAY · A BETTER TOMORROW</div>
-    <div class="footer-copy"><a href="#home">Back to top ↑</a> &nbsp;·&nbsp; <a href="https://github.com/LionTeachCooperationsLK/Lion-Saver" target="_blank" rel="noopener">GitHub</a></div>
-  </div>
-</footer>
-
+<footer><div class="footer-inner"><div class="footer-copy"><strong>LION TEACH COOPERATIONS LK</strong><br>© <span id="year"></span> All rights reserved.</div><div class="footer-tagline">INNOVATION TODAY · A BETTER TOMORROW</div><div class="footer-copy"><a href="#home">Back to top ↑</a> &nbsp;·&nbsp; <a href="https://github.com/LionTeachCooperationsLK/Lion-Saver" target="_blank" rel="noopener">GitHub</a></div></div></footer>
+<a class="whatsapp-float" href="https://wa.me/94768253560?text=Hello%20LION%20TEACH%20COOPERATIONS%20LK" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp" title="Chat on WhatsApp">☏</a><button class="back-top" id="backTop" aria-label="Back to top" title="Back to top">↑</button>
 <script>
 (function(){
-  const particleHost = document.getElementById('particles');
-  for(let i=0;i<48;i++){
-    const p=document.createElement('span');
-    p.className='particle';
-    p.style.left=(Math.random()*100)+'%';
-    p.style.animationDuration=(7+Math.random()*12)+'s';
-    p.style.animationDelay=(-Math.random()*18)+'s';
-    p.style.opacity=(0.25+Math.random()*0.65).toFixed(2);
-    const size=1+Math.random()*2.5;
-    p.style.width=size+'px';p.style.height=size+'px';
-    particleHost.appendChild(p);
-  }
-
-  const intro=document.getElementById('intro');
-  window.setTimeout(()=>intro.classList.add('hide'),1900);
-
-  const toggle=document.getElementById('appsToggle');
-  const dropdown=document.getElementById('appsDropdown');
-  toggle.addEventListener('click',function(e){
-    e.stopPropagation();
-    const isOpen=dropdown.classList.toggle('open');
-    toggle.setAttribute('aria-expanded',String(isOpen));
-  });
-  document.addEventListener('click',function(e){
-    if(!dropdown.contains(e.target)){
-      dropdown.classList.remove('open');
-      toggle.setAttribute('aria-expanded','false');
-    }
-  });
-  dropdown.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
-    dropdown.classList.remove('open');toggle.setAttribute('aria-expanded','false');
-  }));
-
-  const mobileBtn=document.getElementById('mobileMenu');
-  const navLinks=document.getElementById('navLinks');
-  mobileBtn.addEventListener('click',function(){
-    const shown=navLinks.classList.toggle('show');
-    mobileBtn.setAttribute('aria-expanded',String(shown));
-  });
-  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
-    navLinks.classList.remove('show');
-    mobileBtn.setAttribute('aria-expanded','false');
-  }));
-  document.getElementById('year').textContent=new Date().getFullYear();
+ const particleHost=document.getElementById('particles');for(let i=0;i<48;i++){const p=document.createElement('span');p.className='particle';p.style.left=(Math.random()*100)+'%';p.style.animationDuration=(7+Math.random()*12)+'s';p.style.animationDelay=(-Math.random()*18)+'s';p.style.opacity=(.25+Math.random()*.65).toFixed(2);const size=1+Math.random()*2.5;p.style.width=size+'px';p.style.height=size+'px';particleHost.appendChild(p)}
+ const intro=document.getElementById('intro');window.setTimeout(()=>intro.classList.add('hide'),1900);
+ const toggle=document.getElementById('appsToggle'),dropdown=document.getElementById('appsDropdown');toggle.addEventListener('click',e=>{e.stopPropagation();const open=dropdown.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open))});document.addEventListener('click',e=>{if(!dropdown.contains(e.target)){dropdown.classList.remove('open');toggle.setAttribute('aria-expanded','false')}});dropdown.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{dropdown.classList.remove('open');toggle.setAttribute('aria-expanded','false')}));
+ const mobileBtn=document.getElementById('mobileMenu'),navLinks=document.getElementById('navLinks');mobileBtn.addEventListener('click',()=>{const shown=navLinks.classList.toggle('show');mobileBtn.setAttribute('aria-expanded',String(shown))});navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('show');mobileBtn.setAttribute('aria-expanded','false')}));document.getElementById('year').textContent=new Date().getFullYear();
+ // FAQ accordion
+ document.querySelectorAll('.faq-question').forEach(button=>button.addEventListener('click',()=>{const item=button.closest('.faq-item'),open=!item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(other=>{other.classList.remove('open');other.querySelector('.faq-question').setAttribute('aria-expanded','false')});if(open){item.classList.add('open');button.setAttribute('aria-expanded','true')}}));
+ // Reveal added sections as they enter the viewport
+ const revealItems=document.querySelectorAll('.reveal');if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});revealItems.forEach(item=>observer.observe(item))}else{revealItems.forEach(item=>item.classList.add('visible'))}
+ // Back-to-top control
+ const backTop=document.getElementById('backTop');window.addEventListener('scroll',()=>backTop.classList.toggle('show',window.scrollY>450),{passive:true});backTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 })();
 </script>
-</body>
-</html>
+</body></html>
