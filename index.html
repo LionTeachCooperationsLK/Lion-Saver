@@ -66,21 +66,10 @@ footer{border-top:1px solid rgba(255,255,255,.1);background:rgba(0,0,0,.25);padd
  // Reveal added sections as they enter the viewport
  const revealItems=document.querySelectorAll('.reveal');if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});revealItems.forEach(item=>observer.observe(item))}else{revealItems.forEach(item=>item.classList.add('visible'))}
 
- // Direct APK download. Use real byte progress when CORS permits; otherwise show a clearly approximate ring while the browser handles the file transfer.
- const downloadBtn=document.getElementById('downloadApkBtn'),downloadModal=document.getElementById('downloadModal'),downloadClose=document.getElementById('downloadClose'),progressRing=document.getElementById('progressRing'),progressArc=document.getElementById('progressArc'),downloadPercent=document.getElementById('downloadPercent'),downloadStatus=document.getElementById('downloadStatus'),downloadNote=document.getElementById('downloadNote'),directDownload=document.getElementById('directDownload');
+ // Direct APK download. Navigate straight to GitHub's release asset so the browser downloads it without a cross-origin XHR/blob request.
+ const downloadBtn=document.getElementById('downloadApkBtn');
  const apkUrl='https://github.com/LionTeachCooperationsLK/Lion-Saver/releases/download/v1.1.0/app-debug.apk';
- let estimateTimer=null;
- function setProgress(pct){const n=Math.max(0,Math.min(100,pct));downloadPercent.textContent=Math.round(n)+'%';progressArc.style.strokeDashoffset=String(502.65*(1-n/100));progressRing.setAttribute('aria-valuenow',String(Math.round(n)))}
- function stopEstimate(){if(estimateTimer){clearInterval(estimateTimer);estimateTimer=null}}
- function closeDownload(){stopEstimate();downloadModal.classList.remove('show');downloadModal.setAttribute('aria-hidden','true')}
- downloadClose.addEventListener('click',closeDownload);downloadModal.addEventListener('click',e=>{if(e.target===downloadModal)closeDownload()});
- downloadBtn.addEventListener('click',()=>{stopEstimate();downloadModal.classList.add('show');downloadModal.setAttribute('aria-hidden','false');setProgress(0);downloadStatus.textContent='Connecting to secure download…';downloadNote.textContent='Please keep this window open until the download finishes.';directDownload.classList.remove('show');
-  const xhr=new XMLHttpRequest();xhr.open('GET',apkUrl,true);xhr.responseType='blob';let usedFallback=false;
-  xhr.onprogress=e=>{if(e.lengthComputable&&!usedFallback){const pct=Math.min(99,Math.round(e.loaded/e.total*100));setProgress(pct);downloadStatus.textContent='Downloading LION SAVER…';downloadNote.textContent='Download progress is being measured from the file data.';}};
-  xhr.onload=()=>{stopEstimate();if(xhr.status>=200&&xhr.status<300&&xhr.response&&xhr.response.size>0){const blobUrl=URL.createObjectURL(xhr.response);const a=document.createElement('a');a.href=blobUrl;a.download='LION-SAVER-v1.1.0.apk';document.body.appendChild(a);a.click();a.remove();setProgress(100);downloadStatus.textContent='Download complete!';downloadNote.textContent='LION SAVER APK has been sent to your device downloads.';setTimeout(()=>URL.revokeObjectURL(blobUrl),60000);}else{fallbackDownload();}};
-  xhr.onerror=()=>fallbackDownload();xhr.onabort=()=>{stopEstimate();downloadStatus.textContent='Download cancelled';};xhr.send();
-  function fallbackDownload(){if(usedFallback)return;usedFallback=true;setProgress(0);downloadStatus.textContent='Starting your download…';downloadNote.textContent='Your browser handles the final file transfer. This ring is an animated estimate, not exact file progress.';directDownload.classList.add('show');let estimate=0;estimateTimer=setInterval(()=>{estimate=Math.min(95,estimate+(estimate<60?3:estimate<85?1:0.25));setProgress(estimate);if(estimate>=95){clearInterval(estimateTimer);estimateTimer=null;downloadStatus.textContent='Download started';downloadNote.textContent='The browser is completing the download. Exact progress is not available in this browser.';}},350);const a=document.createElement('a');a.href=apkUrl;a.download='LION-SAVER-v1.1.0.apk';document.body.appendChild(a);a.click();a.remove();}
- });
+ downloadBtn.addEventListener('click',()=>{window.location.href=apkUrl;});
  // Back-to-top control
  const backTop=document.getElementById('backTop');window.addEventListener('scroll',()=>backTop.classList.toggle('show',window.scrollY>450),{passive:true});backTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 })();
